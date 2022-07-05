@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 04 Jul 2022 pada 16.47
+-- Waktu pembuatan: 05 Jul 2022 pada 14.48
 -- Versi server: 10.4.17-MariaDB
 -- Versi PHP: 8.0.0
 
@@ -40,12 +40,12 @@ CREATE TABLE `tb_data` (
 --
 
 INSERT INTO `tb_data` (`id`, `x1`, `y1`, `class`, `hitung`) VALUES
-(1, 7, 6, 'Bad', 0),
-(2, 6, 6, 'Bad', 0),
-(3, 6, 5, 'Bad', 0),
-(4, 1, 3, 'Good', 0),
-(5, 2, 4, 'Good', 0),
-(6, 2, 2, 'Good', 0);
+(1, 8, 4, 'Good', 0),
+(2, 4, 5, 'Bad', 0),
+(3, 4, 6, 'Bad', 0),
+(4, 7, 7, 'Good', 0),
+(5, 5, 6, 'Bad', 0),
+(6, 6, 5, 'Good', 0);
 
 --
 -- Indexes for dumped tables
@@ -65,7 +65,7 @@ ALTER TABLE `tb_data`
 -- AUTO_INCREMENT untuk tabel `tb_data`
 --
 ALTER TABLE `tb_data`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

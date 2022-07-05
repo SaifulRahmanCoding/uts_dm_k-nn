@@ -3,7 +3,7 @@
 $db = new mysqli("localhost","root","","db_knn");
 
 // online
-// $db = new mysqli("localhost","id19218370_db_knn","dm_knn123Rahman","id19218370_dm_knn");
+// $db = new mysqli("localhost","rahmandm_wp257","rahmandm123","rahmandm_wp257");
 
 // cek koneksi
 if ($db->connect_error) {

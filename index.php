@@ -9,7 +9,8 @@
 </head>
 <body>
 	<div id="wrapper">
-		<h1 class="text-center mt-5 fw-bolder">Data Mining (Metode K-NN)</h1>
+		<h2 class="text-center mt-5 fw-bolder">Data Pengukuran Kertas Tisu Menggunakan Asam (Metode K-NN)</h2>
+		<p class="text-center">Copyright By Saiful Rahman</p>
 		<div class="container">
 			<div class="row d-flex justify-content-center">
 			<!-- kiri -->
@@ -139,11 +140,11 @@
 
 									<?php
 									// tambah isi array
-									if($data['class']=="Good") :
-									array_push($arrayClassGood, $data['class']);
+									if($batasK['class']=="Good") :
+									array_push($arrayClassGood, $batasK['class']);
 									endif;
-									if($data['class']=="Bad") :
-									array_push($arrayClassBad, $data['class']);
+									if($batasK['class']=="Bad") :
+									array_push($arrayClassBad, $batasK['class']);
 									endif;
 								} ?>
 								</tbody>
@@ -178,9 +179,6 @@
 
 					<?php endif; 
 				endif;
-				// hapus semua isi array class
-				unset($arrayClassGood);
-				unset($arrayClassBad); 
 
 				// jika selesai aksi hitung, atur nilai setiap baris pada kolom hitung jadi 0
 				$query= "SELECT * FROM tb_data";

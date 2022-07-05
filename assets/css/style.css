@@ -4,7 +4,7 @@ body{
 	background-color: #F6F6F6;
 }
 /*atur font size*/
-form, input, option,select, textarea, #registrasi .opsi-login a, #login .opsi-login a{
+form, input, option,select, textarea{
 	font-size: 14px !important;
 }
 /*table*/

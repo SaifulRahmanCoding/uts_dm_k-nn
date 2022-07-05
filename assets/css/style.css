@@ -32,3 +32,7 @@ select, option{
 ::-webkit-scrollbar-track{
 	background-color: transparent;
 }
+/*hapus iklan*/
+.disclaimer{
+	display: none !important;
+}

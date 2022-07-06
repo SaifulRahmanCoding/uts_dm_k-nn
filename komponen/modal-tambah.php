@@ -41,7 +41,7 @@
         </div>
         <div class="modal-footer justify-content-center">
 
-          <input type="submit" name="submit" value="Simpan" class="btn btn-info text-white col-11 p-2">
+          <input type="submit" name="submit" value="Simpan" class="btn btn-info text-white col-12 col-lg-11 p-2">
 
         </div>
       </div>

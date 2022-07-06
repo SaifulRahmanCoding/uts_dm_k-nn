@@ -32,8 +32,12 @@
 						<tbody>
 							<?php
 
-							$query= "SELECT * FROM tb_data";
-							$result=mysqli_query($db, $query);
+							$query = "SELECT * FROM tb_data";
+							$result = mysqli_query($db, $query);
+
+							$queryid = "SELECT * FROM tb_data WHERE id IN (SELECT MAX(id) FROM tb_data)";
+							$resultid = mysqli_query($db, $queryid);
+							$id_desc = mysqli_fetch_assoc($resultid);
 							$i=1;
 						// foreach
 							foreach ($result as $data) { ?>
@@ -45,7 +49,10 @@
 									<td class="aksi">
 										<!-- Button trigger modal -->
 										<a class="text-decoration-none text-success pe-2" data-bs-toggle="modal" data-target="#EditData<?php echo $data['id'] ?>" href="#EditData<?php echo $data['id'] ?>">Edit</a>
+										<?php
+										if($data['id']==$id_desc['id']) : ?>
 										|<a class="text-decoration-none text-danger ps-2" data-bs-toggle="modal" data-target="#HapusData<?php echo $data['id'] ?>" href="#HapusData<?php echo $data['id'] ?>">Hapus</a>
+										<?php endif; ?>
 									</td>
 
 									<?php require('komponen/modal-edit.php'); ?>
@@ -178,22 +185,10 @@
 						</div>
 
 					<?php endif; 
-				endif;
-
-				// jika selesai aksi hitung, atur nilai setiap baris pada kolom hitung jadi 0
-				$query= "SELECT * FROM tb_data";
-				$reset_hitung=mysqli_query($db, $query);
-				$i=1;
-				// foreach
-				foreach ($reset_hitung as $reset) { 
-					$query = "UPDATE tb_data SET hitung = '0' WHERE id = $i";
-					$update = mysqli_query($db,$query);
-					$i++;
-				}
-			?>
+				endif;	?>
+			</div>
 		</div>
 	</div>
-</div>
 </body>
 </html>
 <?php require('config/script.php');

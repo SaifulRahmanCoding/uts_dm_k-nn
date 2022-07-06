@@ -1,13 +1,13 @@
 <?php
 // kalau pakai offline
-$db = new mysqli("localhost","root","","db_knn");
+// $db = mysqli_connect("localhost","root","","db_knn");
 
 // online
-// $db = new mysqli("localhost","rahmandm_wp257","rahmandm123","rahmandm_wp257");
+$db = mysqli_connect("sql210.ezyro.com","ezyro_32106300","0tgmys7","ezyro_32106300_db_knn");
 
 // cek koneksi
-if ($db->connect_error) {
-	echo "Gagal menyambungkan ke MySQL : ".$db->connect_error;
+if (!$db) {
+	echo "Gagal menyambungkan ke MySQL:".mysqli_connect_error();
 	exit();
 }
 ?>

@@ -15,6 +15,14 @@ select, option{
 	cursor: pointer;
 }
 
+/*font judul*/
+@media screen and (max-width: 578px){
+
+	#wrapper h2{
+		font-size: 18px !important;
+	}
+	
+}
 
 /*costum scrollbar*/
 ::-webkit-scrollbar{

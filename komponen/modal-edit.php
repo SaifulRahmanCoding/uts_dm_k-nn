@@ -36,7 +36,7 @@
       </div>
       <div class="modal-footer justify-content-center">
 
-        <input type="submit" name="submit" value="Edit" class="btn btn-info text-white col-11 p-2">
+        <input type="submit" name="submit" value="Edit" class="btn btn-info text-white col-12 col-lg p-2">
 
       </div>
     </div>

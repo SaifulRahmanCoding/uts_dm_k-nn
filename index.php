@@ -15,7 +15,7 @@
 			<div class="row d-flex justify-content-center">
 			<!-- kiri -->
 			<!-- data awal -->
-			<div class="kiri col-6 mb-3">
+			<div class="kiri col-sm-12 col-lg-6 mb-3">
 				<div class="wrap table-responsive shadow rounded p-3 mt-3 mx-4">
 					<h4 class="mb-4 fw-bolder">Data Awal</h4>
 					<?php require('komponen/modal-tambah.php'); ?>
@@ -63,7 +63,7 @@
 
 			<!-- data olahan -->
 			<!-- kanan -->
-			<div class="kanan col-6 mb-3">
+			<div class="kanan col-sm-12 col-lg-6 mb-3">
 				<div class="wrap table-responsive shadow rounded p-3 mt-3 mx-4">
 					<h4 class="mb-4 fw-bolder">Hitung Data</h4>
 					<?php require('komponen/modal-data-test.php'); ?>
@@ -107,7 +107,7 @@
 					</div>
 					<!-- end kanan -->
 
-					<div class="col-6 mb-4">
+					<div class="col-sm-12 col-lg-6 mb-4">
 						<div class="wrap table-responsive shadow rounded p-3 mt-3 mx-4">
 							<h4 class="mb-4 fw-bolder">Hasil Data K= <?php echo $_POST['K']?></h4>
 

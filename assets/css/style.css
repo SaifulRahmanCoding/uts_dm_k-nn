@@ -23,6 +23,10 @@ select, option{
 	}
 	
 }
+/*table*/
+th{
+	background-color: #92ACFF !important;
+}
 
 /*costum scrollbar*/
 ::-webkit-scrollbar{

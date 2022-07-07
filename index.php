@@ -9,9 +9,10 @@
 </head>
 <body>
 	<div id="wrapper">
-		<h2 class="text-center mt-5 fw-bolder">Data Pengukuran Kertas Tisu Menggunakan Asam (Metode K-NN)</h2>
-		<p class="text-center">Copyright By Saiful Rahman</p>
 		<div class="container">
+			<h2 class="text-center mt-5 fw-bolder">Data Pengukuran kualitas Kertas Tisu (Metode K-NN)</h2>
+			<p class="text-center">klasifikasi kualitas kertas tisu apakah baik atau jelek, dengan objek testing menggunakan dua attribute yaitu lama waktu tahan terhadap asam <b>(x1)</b> dan kekuatan <b>(y1)</b></p>
+			<p class="text-center" style="font-size: 13px;">Copyright By Saiful Rahman</p>
 			<div class="row d-flex justify-content-center">
 			<!-- kiri -->
 			<!-- data awal -->
@@ -23,9 +24,9 @@
 						<thead>
 							<tr>
 								<th scope="col">No</th>
-								<th scope="col" class="col-4">x1</th>
-								<th scope="col" class="col-4">y1</th>
-								<th scope="col" class="col-4">Class</th>
+								<th scope="col" class="col-4 asam">x1 (detik)</th>
+								<th scope="col" class="col-4">y1 (Kg/M2)</th>
+								<th scope="col" class="col-4">Klasifikasi</th>
 								<th scope="col" style="min-width: 100px !important;">Aksi</th>
 							</tr>
 						</thead>
@@ -72,7 +73,7 @@
 			<!-- kanan -->
 			<div class="kanan col-sm-12 col-lg-6 mb-3">
 				<div class="wrap table-responsive shadow rounded p-3 mt-3 mx-4">
-					<h4 class="mb-4 fw-bolder">Hitung Data</h4>
+					<h4 class="mb-4 fw-bolder">Klasifikasikan</h4>
 					<?php require('komponen/modal-data-test.php'); ?>
 					<a class="btn btn-primary mb-3" style="font-size: 14px;" href="index.php">Reset</a>
 					<?php
@@ -83,8 +84,8 @@
 							<table class="table table-striped table-bordered responsive-utilities text-center">
 								<thead>
 									<tr>
-										<th scope="col">x1</th>
-										<th scope="col">y1</th>
+										<th scope="col">x1 (detik)</th>
+										<th scope="col">y1 (Kg/M2)</th>
 										<th scope="col">Nilai Jarak</th>
 									</tr>
 								</thead>
@@ -121,10 +122,10 @@
 							<table class="table table-striped table-bordered responsive-utilities text-center">
 								<thead>
 									<tr>
-										<th scope="col">x1</th>
-										<th scope="col">y1</th>
+										<th scope="col">x1 (detik)</th>
+										<th scope="col">y1 (Kg/M2)</th>
 										<th scope="col">Nilai Jarak</th>
-										<th scope="col" class="col-4">Class</th>
+										<th scope="col" class="col-4">Klasifikasi</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -164,13 +165,13 @@
 							$jumlahBad = count($arrayClassBad);
 							$class_kategori = ($jumlahGood>$jumlahBad) ? "Good" : "Bad";
 							?>
-							<h4 class="fw-bolder" style="margin-top: 60px !important;">Hasil Class</h4>
+							<h4 class="fw-bolder" style="margin-top: 60px !important;">Hasil Klasifikasi</h4>
 							<table class="table table-striped table-bordered responsive-utilities text-center">
 								<thead>
 									<tr>
-										<th scope="col">x2</th>
-										<th scope="col">y2</th>
-										<th scope="col" class="col-4">Class</th>
+										<th scope="col">x2 (detik)</th>
+										<th scope="col">y2 (Kg/M2)</th>
+										<th scope="col" class="col-4">Klasifikasi</th>
 									</tr>
 								</thead>
 								<tbody>

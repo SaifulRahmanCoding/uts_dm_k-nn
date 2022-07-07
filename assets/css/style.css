@@ -26,6 +26,7 @@ select, option{
 /*table*/
 th{
 	background-color: #92ACFF !important;
+	vertical-align: middle;
 }
 
 /*costum scrollbar*/

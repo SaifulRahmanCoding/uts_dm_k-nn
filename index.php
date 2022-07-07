@@ -11,7 +11,7 @@
 	<div id="wrapper">
 		<div class="container">
 			<h2 class="text-center mt-5 fw-bolder">Data Pengukuran kualitas Kertas Tisu (Metode K-NN)</h2>
-			<p class="text-center">klasifikasi kualitas kertas tisu apakah baik atau jelek, dengan objek testing menggunakan dua attribute yaitu lama waktu tahan terhadap asam <b>(x1)</b> dan kekuatan <b>(y1)</b></p>
+			<p class="text-center">klasifikasi kualitas kertas tisu apakah baik atau jelek, dengan objek testing menggunakan dua attribute yaitu lama waktu tahan terhadap asam <b>(x1)</b> dan kekuatan tarikan kertas <b>(y1)</b></p>
 			<p class="text-center" style="font-size: 13px;">Copyright By Saiful Rahman</p>
 			<div class="row d-flex justify-content-center">
 			<!-- kiri -->
@@ -25,7 +25,7 @@
 							<tr>
 								<th scope="col">No</th>
 								<th scope="col" class="col-4 asam">x1 (detik)</th>
-								<th scope="col" class="col-4">y1 (Kg/M2)</th>
+								<th scope="col" class="col-4">y1 (N/M2)</th>
 								<th scope="col" class="col-4">Klasifikasi</th>
 								<th scope="col" style="min-width: 100px !important;">Aksi</th>
 							</tr>
@@ -85,7 +85,7 @@
 								<thead>
 									<tr>
 										<th scope="col">x1 (detik)</th>
-										<th scope="col">y1 (Kg/M2)</th>
+										<th scope="col">y1 (N/M2)</th>
 										<th scope="col">Nilai Jarak</th>
 									</tr>
 								</thead>
@@ -123,7 +123,7 @@
 								<thead>
 									<tr>
 										<th scope="col">x1 (detik)</th>
-										<th scope="col">y1 (Kg/M2)</th>
+										<th scope="col">y1 (N/M2)</th>
 										<th scope="col">Nilai Jarak</th>
 										<th scope="col" class="col-4">Klasifikasi</th>
 									</tr>
@@ -170,7 +170,7 @@
 								<thead>
 									<tr>
 										<th scope="col">x2 (detik)</th>
-										<th scope="col">y2 (Kg/M2)</th>
+										<th scope="col">y2 (N/M2)</th>
 										<th scope="col" class="col-4">Klasifikasi</th>
 									</tr>
 								</thead>
